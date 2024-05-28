@@ -38,12 +38,12 @@
         {
             "title": "Segfault",
             "category": "web development",
-            "description": "Developed a blog-like web app enabling students and faculties to ask, answer questions, and discuss diverse topics of interest."
+            "description": "Developed an interactive blog-like web application designed to foster engagement among students and faculty by allowing them to ask questions, provide answers, and discuss a wide range of topics. The platform encourages collaborative learning, supports academic discussions, and enhances the exchange of ideas within the educational community."
         },
         {
             "title": "UI Fellowship",
             "category": "web development",
-            "description": "Implemented a student networking website, attracting over 3000 students, inspiring other, in the partnership with UI Fellowship."
+            "description": "Implemented a student networking website in partnership with UI Fellowship, successfully attracting over 3,000 students. The platform not only facilitates connections and collaboration among students but also inspires others to join and participate in a vibrant academic community."
         }
     ]
   }
