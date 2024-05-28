@@ -1,29 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kazuki Neo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <h2>Kazuki Neo</h2>
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/kazuki-neo/"><img src="Assets/LinkedIn-Logos/In/Digital/White/2x/In-White-21@2x.png" alt="LinkedIn Icon"></a>
-            <a href="https://github.com/kazneo"><img src="Assets/github-mark/github-mark-white.svg" alt="GitHub Icon"></a>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <!-- <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure> -->
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Kazuki Neo</h1>
+
+          <p class="title">Web Developer</p>
         </div>
-        <p>
-            Hello! My name is Kazuki, and I recently graduated from Rensselaer Polytechnic Institute (RPI) with a Bachelor's degree in 
-            Information Technology and Web Science with a focus in Machine and Computational Learning. Currently, I am pursuing a 
-            Master's degree at RPI, studying Information Technology with a focus in Managing Infomation System. With a solid foundation 
-            in web development and machine learning, my undergraduate studies centered on Machine Learning, where I developed a passion 
-            for leveraging technology to solve complex problems.
-            </br></br>
-            As I advance my education, I am eager to integrate my technical expertise with strategic management skills to lead innovative 
-            projects and teams. I thrive in collaborative environments and am always keen to learn and apply new technologies. I am constantly 
-            seeking new challenges and opportunities for growth. Feel free to connect with me and talk with me!!
-        </p>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:neok@rpi.edu" class="contact-link">neok@rpi.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:kazneo213@gmail.com" class="contact-link">kazneo213@gmail.com</a>
+            </div>
+
+          </li>
+
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Forest Hills, New York, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link = "about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Design</h4>
+
+                <p class="service-item-text">
+                  
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+
+                <p class="service-item-text">
+                  <!-- High-quality development of sites at the professional level. -->
+                </p>
+              </div>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li> -->
+
+          </ul>
+
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Rensselaer Polytechnic Institute</h4>
+              <h5 style="color: white;">Master of Science in Information Technology</h5>
+            
+              <span>2024 — 2025</span>
+
+              <p class="timeline-text">
+                Building upon undergraduate foundation, emphasizing advanced IT management and system optimization.Through coursework and research, continuing to expand 
+                expertise in data-driven decision-making and strategic IT management, preparing for a career at the intersection of technology and business management.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Rensselaer Polytechnic Institute</h4>
+              <h5 style="color: white;">Bachelor of Science in Information Technology and Web Science</h5>
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                Developed a robust technical skill set, including proficiency in web development, machine learning development, and data analysis among other IT technologies, 
+                from algorithmic, engineering, and social perspectives. Key achievements include enhancing data usability and machine learning integration in atmospheric 
+                science research with NASA, scheduled for presentation at the Asia Oceania Geosciences Society in June 2024.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Profecinal Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data-Driven AI Solutions Intern</h4>
+              <h5 style="color: white;">AlertBoss</h5>
+
+              <span>June 2023 - August 2023</span>
+
+              <p class="timeline-text">
+                Proposed an AI-driven solution to the executives to demonstrate its potential for significantly enhancing user experience. 
+                The solution leverages predictive analytics, personalization engines, automated testing, and intelligent customer support to 
+                create more intuitive and user-friendly interfaces. Additionally, it focuses on improving accessibility by integrating AI tools 
+                that support screen readers, and adaptive layouts, ensuring that all users, including individuals with disabilities, can 
+                effectively interact with the application. By doing so, it not only improves overall user satisfaction but also ensures that 
+                critical information, such as emergency alerts, is delivered in a timely and comprehensible manner.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technology Intern</h4>
+              <h5 style="color: white;">ZoftBase</h5>
+              <span>November 2020 - August 2021</span>
+
+              <p class="timeline-text">
+                Developed drag-and-drop components and a backend for access control using React, Node.js, and MongoDB, hosted on AWS, to enhance 
+                user interface flexibility and security management. Additionally, contributed to brand marketing by creating technology-focused 
+                blog posts and managing social media, which effectively increased online engagement and audience reach.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Design</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Analysis</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Visualization</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Project Planning</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Project Documentation</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list"></ul>
+          
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 id="modal-title"></h3>
+              <p id="modal-category"></p>
+              <p id="modal-description"></p>
+            </div>
+          
+          </div>
+        
+        </section>
+
+      </article>
+
     </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>

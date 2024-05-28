@@ -1,0 +1,50 @@
+{
+    "portfolio": [
+        {
+            "title": "GAN Music Generator",
+            "category": "software development",
+            "description": "Utilizing a dataset of over 290 classical music MIDI files from Kaggle, I developed an LSTM-based GAN model for music generation. This model, designed to capture temporal dependencies in music, includes a Generator creating new sequences and a Discriminator distinguishing between real and generated ones. After extensive training, the model achieved a Discriminator Binary Cross-Entropy (BCE) loss of 0.0001 and a Generator BCE loss of 0.1853, demonstrating its effectiveness in generating high-quality, realistic music sequences."
+        },
+        {
+            "title": "RoundTable",
+            "category": "business plan",
+            "description": "Outlined a strategic plan for a pioneering platform designed to enhance event coordination efficiency specifically for tabletop game communities. The plan focuses on streamlining the organization and management of events, enabling easier scheduling, communication, and participation tracking for game enthusiasts and organizers. By leveraging innovative features tailored to the needs of this niche audience, the platform aims to foster community engagement and simplify logistical challenges. The projected financial performance is robust, with an anticipated Internal Rate of Return (IRR) of 69%, indicating significant potential for profitability and growth."
+        },
+        {
+            "title": "StudentNest",
+            "category": "business plan",
+            "description": "Developed a platform connecting college students with local landlords, streamlining the search for off-campus housing. The user-friendly interface helps students find accommodations and landlords manage listings efficiently. Created a comprehensive business plan detailing our strategic approach, market analysis, and growth projections. In its launch year, the platform is expected to generate $451,000 in profit, with an anticipated annual revenue growth rate of 10%. By leveraging data from user interactions, we enhance the user experience, ensuring better matches between students and housing options, driving sustainable growth and profitability."
+        },
+        {
+            "title": "Intelligent Automation Insight",
+            "category": "software development",
+            "description": "In collaboration with Johnson & Johnson, implementated of a sophisticated machine learning system designed to flag similar projects, a strategic move poised to generate an estimated $4,600 in cost savings per project annually. Through meticulous collaboration and innovative problem-solving, integrated advanced algorithms and data processing techniques, delivering a solution that not only optimized resource allocation but also streamlined project workflows. This collaboration ensured seamless alignment with existing processes, fostering a culture of continuous improvement and data-driven decision-making. Together, this initiative underscored the transformative impact of machine learning on organizational efficiency and highlighted the value of strategic collaboration in achieving shared objectives."
+        },
+        {
+            "title": "Integrating Data Usability and Machine Learning",
+            "category": "research",
+            "description": "Collaborated with NASA to enhance the visibility and traceability of datasets within atmospheric science research, significantly contributing to the field's data management practices. The work has been recognized by the scientific community, with an abstract of my findings accepted for presentation at the prestigious Asia Oceania Geosciences Society conference"
+        },
+        {
+            "title": "Flood Risk Assessment for Medical Infrastructures",
+            "category": "research",
+            "description": "Conducted an in-depth flood risk analysis for medical infrastructure across the U.S., leveraging advanced machine learning algorithms to predict risks based on specific features and utilizing comprehensive data sets from the Federal Emergency Management Agency (FEMA), NASA, and the Homeland Infrastructure Foundation-Level Data (HIFLD). Integrated diverse sources of geospatial and environmental data to assess potential flood impacts, enhancing the resilience and preparedness of critical healthcare facilities against natural disasters."
+        },
+        {
+            "title": "Solar vs Wind: Viable Renewable Energy Source",
+            "category": "web development",
+            "description": "Conducted an in-depth analysis of NASA's Prediction of Worldwide Energy Resource data, transforming raw datasets into actionable insights. Leveraging a robust tech stack comprising React for a dynamic user interface, Node.js for server-side operations, and MongoDB for efficient data storage, developed a sophisticated web application. The application not only visualizes complex energy resource predictions but also provides an interactive platform for users to explore and understand global energy trends effectively."
+        },
+        {
+            "title": "Segfault",
+            "category": "web development",
+            "description": "Developed a blog-like web app enabling students and faculties to ask, answer questions, and discuss diverse topics of interest."
+        },
+        {
+            "title": "UI Fellowship",
+            "category": "web development",
+            "description": "Implemented a student networking website, attracting over 3000 students, inspiring other, in the partnership with UI Fellowship."
+        }
+    ]
+  }
+  
