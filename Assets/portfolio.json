@@ -1,6 +1,11 @@
 {
     "portfolio": [
         {
+            "title": "Quantum Shor's Algorithm",
+            "category": "software development",
+            "description": "As a apart of HackRPI, hackathon, develped a Shor's Algorithm running on IBM's Quantum System One, demonstrating potential vulnerabilities in RSA encryption due to quantum computing. Explored implications of quantum advancements, emphasizing the need for quantum-resistant encryption solutions while highlighting practical limitations of current quantum hardware."
+        },
+        {
             "title": "GAN Music Generator",
             "category": "software development",
             "description": "Utilizing a dataset of over 290 classical music MIDI files from Kaggle, I developed an LSTM-based GAN model for music generation. This model, designed to capture temporal dependencies in music, includes a Generator creating new sequences and a Discriminator distinguishing between real and generated ones. After extensive training, the model achieved a Discriminator Binary Cross-Entropy (BCE) loss of 0.0001 and a Generator BCE loss of 0.1853, demonstrating its effectiveness in generating high-quality, realistic music sequences."

@@ -680,7 +680,10 @@
   .modal-close-btn:hover,
   .modal-close-btn:focus { opacity: 1; }
   
-  .modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
+  .modal-close-btn ion-icon { 
+    --ionicon-stroke-width: 50px; 
+    /* color: var(--white-2); */
+  }
   
   .modal-avatar-box {
     background: var(--bg-gradient-onyx);
@@ -926,8 +929,14 @@
     margin-bottom: 10px;
   }
   
-  .project-item { display: none; }
+  .project-item { 
+    display: none; 
+    border: 2px solid var(--jet);
+    border-radius: 16px;
+  }
   
+  .project-item:hover { border-color: var(--orange-yellow-crayola); }
+
   .project-item.active {
     display: block;
     animation: scaleUp 0.25s ease forwards;
@@ -998,7 +1007,10 @@
   
   .project-title,
   .project-category,
-  .project-desc { margin-left: 10px; }
+  .project-desc { 
+    margin-left: 10px; 
+    margin-bottom: 10px;
+  }
   
   .project-title, #modal-title {
     color: var(--white-2);
