@@ -1,53 +1,75 @@
 {
     "portfolio": [
         {
+            "title": "Exploring Quantum Machine Learning for Financial Applications: Performance Analysis and Practical Limitations",
+            "category": "software development project",
+            "type": "class project",
+            "description": "Conducted a comprehensive analysis of quantum machine learning algorithms, focusing on their performance and practical limitations in financial applications. This research involved a detailed examination of the potential advantages and challenges associated with implementing quantum algorithms in real-world financial scenarios, providing valuable insights into the future of quantum computing in finance."
+        },
+        {
+            "title": "Luma",
+            "category": "software development project",
+            "type": "class project",
+            "description": "Created AI-powered document retrieval system, integrating vector storage for semantic querying and optimizing performance for varied environments"
+        },
+        {
             "title": "Quantum Shor's Algorithm",
-            "category": "software development",
+            "category": "software development project",
+            "type": "hackathon project",
             "description": "As a apart of HackRPI, hackathon, develped a Shor's Algorithm running on IBM's Quantum System One, demonstrating potential vulnerabilities in RSA encryption due to quantum computing. Explored implications of quantum advancements, emphasizing the need for quantum-resistant encryption solutions while highlighting practical limitations of current quantum hardware."
         },
         {
             "title": "GAN Music Generator",
-            "category": "software development",
+            "category": "software development project",
+            "type": "class project",
             "description": "Utilizing a dataset of over 290 classical music MIDI files from Kaggle, I developed an LSTM-based GAN model for music generation. This model, designed to capture temporal dependencies in music, includes a Generator creating new sequences and a Discriminator distinguishing between real and generated ones. After extensive training, the model achieved a Discriminator Binary Cross-Entropy (BCE) loss of 0.0001 and a Generator BCE loss of 0.1853, demonstrating its effectiveness in generating high-quality, realistic music sequences."
         },
         {
             "title": "RoundTable",
             "category": "business plan",
+            "type": "class term project",
             "description": "Outlined a strategic plan for a pioneering platform designed to enhance event coordination efficiency specifically for tabletop game communities. The plan focuses on streamlining the organization and management of events, enabling easier scheduling, communication, and participation tracking for game enthusiasts and organizers. By leveraging innovative features tailored to the needs of this niche audience, the platform aims to foster community engagement and simplify logistical challenges. The projected financial performance is robust, with an anticipated Internal Rate of Return (IRR) of 69%, indicating significant potential for profitability and growth."
         },
         {
             "title": "StudentNest",
             "category": "business plan",
+            "type": "class term project",
             "description": "Developed a platform connecting college students with local landlords, streamlining the search for off-campus housing. The user-friendly interface helps students find accommodations and landlords manage listings efficiently. Created a comprehensive business plan detailing our strategic approach, market analysis, and growth projections. In its launch year, the platform is expected to generate $451,000 in profit, with an anticipated annual revenue growth rate of 10%. By leveraging data from user interactions, we enhance the user experience, ensuring better matches between students and housing options, driving sustainable growth and profitability."
         },
         {
             "title": "Intelligent Automation Insight",
             "category": "software development",
+            "type": "capstone project",
             "description": "In collaboration with Johnson & Johnson, implementated of a sophisticated machine learning system designed to flag similar projects, a strategic move poised to generate an estimated $4,600 in cost savings per project annually. Through meticulous collaboration and innovative problem-solving, integrated advanced algorithms and data processing techniques, delivering a solution that not only optimized resource allocation but also streamlined project workflows. This collaboration ensured seamless alignment with existing processes, fostering a culture of continuous improvement and data-driven decision-making. Together, this initiative underscored the transformative impact of machine learning on organizational efficiency and highlighted the value of strategic collaboration in achieving shared objectives."
         },
         {
             "title": "Integrating Data Usability and Machine Learning",
             "category": "research",
+            "type": "Academic Research",
             "description": "Collaborated with NASA to enhance the visibility and traceability of datasets within atmospheric science research, significantly contributing to the field's data management practices. The work has been recognized by the scientific community, with an abstract of my findings accepted for presentation at the prestigious Asia Oceania Geosciences Society conference"
         },
         {
             "title": "Flood Risk Assessment for Medical Infrastructures",
             "category": "research",
+            "type": "Academic Research",
             "description": "Conducted an in-depth flood risk analysis for medical infrastructure across the U.S., leveraging advanced machine learning algorithms to predict risks based on specific features and utilizing comprehensive data sets from the Federal Emergency Management Agency (FEMA), NASA, and the Homeland Infrastructure Foundation-Level Data (HIFLD). Integrated diverse sources of geospatial and environmental data to assess potential flood impacts, enhancing the resilience and preparedness of critical healthcare facilities against natural disasters."
         },
         {
             "title": "Solar vs Wind: Viable Renewable Energy Source",
-            "category": "web development",
+            "category": "web development project",
+            "type": ["Academic Research", "class project"],
             "description": "Conducted an in-depth analysis of NASA's Prediction of Worldwide Energy Resource data, transforming raw datasets into actionable insights. Leveraging a robust tech stack comprising React for a dynamic user interface, Node.js for server-side operations, and MongoDB for efficient data storage, developed a sophisticated web application. The application not only visualizes complex energy resource predictions but also provides an interactive platform for users to explore and understand global energy trends effectively."
         },
         {
             "title": "Segfault",
             "category": "web development",
+            "type": "class term project",
             "description": "Developed an interactive blog-like web application designed to foster engagement among students and faculty by allowing them to ask questions, provide answers, and discuss a wide range of topics. The platform encourages collaborative learning, supports academic discussions, and enhances the exchange of ideas within the educational community."
         },
         {
             "title": "UI Fellowship",
             "category": "web development",
+            "type": "independent project",
             "description": "Implemented a student networking website in partnership with UI Fellowship, successfully attracting over 3,000 students. The platform not only facilitates connections and collaboration among students but also inspires others to join and participate in a vibrant academic community."
         }
     ]

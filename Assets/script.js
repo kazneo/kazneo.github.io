@@ -47,6 +47,7 @@ $(document).ready(function() {
               </figure>
               <h3 class="project-title">${element.title}</h3>
               <p class="project-category">${element.category}</p>
+              <p class="project-type">${element.type}</p>
             </a>
           </li>`;
       });
