@@ -1,78 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Kazuki Neo - Home</title>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-      <script src="https://cdn.tailwindcss.com"></script>
-      <style>
-          body {
-              font-family: 'Inter', sans-serif;
-          }
-      </style>
-  </head>
-  <body class="bg-gray-100 min-h-screen flex flex-col items-center">
-      <!-- Navbar -->
-      <nav class="w-full bg-white shadow-sm py-4 px-6 md:px-12 flex justify-between items-center rounded-b-lg">
-          <div class="text-lg font-bold text-gray-800">Kazuki Neo</div>
-          <div class="flex space-x-6">
-              <a href="about.html" class="text-gray-600 hover:text-gray-900 font-medium">About</a>
-              <a href="contact.html" class="text-gray-600 hover:text-gray-900 font-medium">Contact</a>
-          </div>
+<html lang="en" class="h-full">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazuki Neo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom styles for clickable cards */
+        .clickable-card {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans flex flex-col min-h-screen">
+  <header class="w-full bg-white shadow-sm px-6">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-6">
+      <h1 class="font-mono font-bold text-lg">Kazuki Neo</h1>
+      <nav class="space-x-4 text-sm font-mono">
+        <a href="about.html" class="hover:underline">About</a>
+        <!-- <a href="contact.html" class="hover:underline">Contact</a> -->
       </nav>
+    </div>
+  </header>
 
-      <!-- Main Content Area -->
-      <main class="flex-grow w-full max-w-4xl bg-white p-8 md:p-12 mt-8 rounded-lg shadow-md">
-          <section class="mb-12">
-              <h1 class="text-4xl font-bold text-gray-900 mb-2">Hi, I'm Kazuki Neo</h1>
-              <p class="text-blue-700 font-medium mb-4 text-xl">Recent Graduate from Rensselaer Polytechnic Institute</p>
-              <p class="text-gray-700 mb-4 text-lg space-y-4">
-                  <p>
-                      I'm a recent graduate of Rensselaer Polytechnic Institute with a strong academic foundation in Data Analysis and Machine Learning, 
-                      passionate about applying data science to drive innovation, protect digital ecosystems, and enhance user experiences.
-                  </p>
-                  <p>
-                      Throughout my academic and professional journey, I've built full-stack applications, engineered intelligent systems, and conducted impactful research. 
-                      Every project I take on is an opportunity to learn, grow, and make an impact.
-                  </p>
-                  <p>
-                      One of my standout experiences was working with Johnson & Johnson as a part of capstone project, where we developed a machine learning system that flagged project similarities, saving an estimated $4,600 per project annually and streamlining internal workflows.
-                  </p>
-                  <p>
-                      If you're looking for someone who blends deep technical skills with strategic thinking and who thrives at the edge of what's next, I'm open to new challenges, collaborations, and opportunities to build smarter systems for the future.
-                  </p>
-              </p>
-              <a href="about.html" class="inline-block mt-4 px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition duration-300 shadow-md">More Information →</a>
-          </section>
+  <main class="flex-grow max-w-5xl mx-auto px-6 py-12">
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-2">Hi, I'm Kazuki</h2>
+      <p class="text-blue-600 text-lg mb-2">Recent Graduate from Rensselaer Polytechnic Institute</p>
+      <!-- <p class="text-gray-700 mb-4">Tech enthusiast with a passion for data-driven solutions.  I am always looking for new opportunities to learn and grow, and I am excited to see where my career will take me next.</p> -->
+        <p class="text-gray-700 mb-4">
+            I'm driven by a passion for extracting insights from data, using them to fuel innovation, safeguard digital ecosystems, and elevate user experiences. 
+            With every project, I see a chance to learn, grow, and create meaningful impact.
+        </p>
+      <button class="bg-black text-white px-4 py-2 rounded shadow hover:bg-gray-800 transition" onclick="location.href='about.html'">More Information ➔</button>
+    </section>
 
-          <section class="mb-16 border-t pt-8 mt-8 border-gray-200">
-              <h2 class="text-3xl font-bold text-gray-900 mb-2">Academic Projects</h2>
-              <p class="text-lg text-gray-700 mb-6">Here are some of my recent academic projects.</p>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                      <h3 class="text-xl font-bold mb-2 text-gray-800">QML for Finance</h3>
-                      <p class="text-base text-gray-700">Developed and evaluated quantum machine learning algorithms for financial risk modeling, including Variational Quantum Classifier and Quantum Neural Network Classifier, achieving over 50% accuracy on reduced datasets and demonstrating their viability in data-constrained environments.</p>
-                  </div>
-                  <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                      <h3 class="text-xl font-bold mb-2 text-gray-800">Luma</h3>
-                      <p class="text-base text-gray-700">Built an LLM-powered document querying system allowing semantic search and retrieval of information.</p>
-                  </div>
-                  <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                      <h3 class="text-xl font-bold mb-2 text-gray-800">Round Table</h3>
-                      <p class="text-base text-gray-700">Created a strategic business framework to pioneer a platform aimed at enhancing event coordination efficiency for tabletop game communities while fostering collaboration and engagement.</p>
-                  </div>
-                  <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                      <h3 class="text-xl font-bold mb-2 text-gray-800">Intelligent Automation Insight</h3>
-                      <p class="text-base text-gray-700">In collaboration with Johnson & Johnson, developed a machine learning system that flags project similarities, saving an estimated $4,600 per project annually and streamlining internal workflows.</p>
-                  </div>
-              </div>
-          </section>
-      </main>
+    <hr class="my-10">
 
-      <!-- Footer -->
-      <footer class="w-full bg-white text-center py-4 mt-8 text-gray-600 text-sm rounded-t-lg">
-          &copy; 2025 / Kazuki Neo
-      </footer>
-  </body>
+   <section class="mb-12">
+        <h3 class="text-3xl font-extrabold text-gray-900 text-center mb-10">Connect With Me</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Email Card -->
+            <div
+                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center clickable-card"
+                onclick="window.location.href='mailto:kazneo213@gmail.com';"
+            >
+                <div class="bg-gray-800 p-3 rounded-full mb-4 shadow-md">
+                    <!-- Email Icon (SVG from Lucide) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-white">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </div>
+                <h4 class="font-bold text-xl text-gray-800 mb-2">Email</h4>
+                <p class="text-base text-gray-600 break-words">
+                    kazneo213@gmail.com
+                </p>
+            </div>
+
+            <!-- GitHub Card -->
+            <div
+                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center clickable-card"
+                onclick="window.location.href='https://github.com/kazneo';"
+            >
+                <div class="bg-gray-800 p-3 rounded-full mb-4 shadow-md">
+                    <!-- GitHub Icon (SVG from Lucide) -->
+                    <img src="Assets/images/Logos/github-mark/github-mark-white.svg" alt="github logo" class="w-8 h-8">
+                </div>
+                <h4 class="font-bold text-xl text-gray-800 mb-2">GitHub</h4>
+                <p class="text-base text-gray-600 break-words">
+                    <a href="https://github.com/kazneo">github.com/kazneo</a>
+                </p>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div
+                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center clickable-card"
+                onclick="window.location.href='https://www.linkedin.com/in/kazuki-neo';"
+            >
+                <div class="bg-gray-800 p-3 rounded-full mb-4 shadow-md">
+                    <!-- LinkedIn Icon (SVG from Lucide) -->
+                    <img src="./Assets/images/Logos/LinkedIn-Logos/In/Digital/White/1x/In-White-26.png" alt="linkedin logo" class="w-8 h-8">
+                </div>
+                <h4 class="font-bold text-xl text-gray-800 mb-2">LinkedIn</h4>
+                <p class="text-base text-gray-600 break-words">
+                    <a href="https://www.linkedin.com/in/kazuki-neo">linkedin.com/in/kazuki-neo</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <hr class="my-10">
+
+    <section class="mb-12">
+      <h3 class="text-2xl font-bold mb-2">Notable Projects</h3>
+      <p class="text-gray-600 mb-6">Here are notable projects.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h4 class="font-bold">Quantum ML for Finance</h4>
+            <p class="text-sm text-gray-700">
+                Developed and evaluated quantum machine learning algorithms for financial risk modeling, 
+                including Variational Quantum Classifier and Quantum Neural Network Classifier, achieving 
+                over 50% accuracy on reduced datasets and demonstrating their viability in data-constrained environments.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h4 class="font-bold">Luma</h4>
+            <p class="text-sm text-gray-700">
+                Developed a web-based application leveraging Large Language Models (LLMs) to transform how users interact with document repositories. 
+                This system enables powerful semantic search and intelligent information retrieval, moving beyond keyword matching to understand the context 
+                and meaning of queries. It significantly streamlines the process of extracting relevant information, making large datasets more accessible and actionable.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h4 class="font-bold">Round Table</h4>
+            <p class="text-sm text-gray-700">
+                Created a strategic business framework to pioneer a platform aimed at enhancing event coordination efficiency for 
+                tabletop game communities while fostering collaboration and engagement.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h4 class="font-bold">Intelligent Automation Insight</h4>
+            <p class="text-sm text-gray-700">
+                In collaboration with Johnson & Johnson, I led a student technical team to develop a proof-of-concept machine learning system that flags project similarities. 
+                We successfully created a business case demonstrating its viability, projecting an estimated annual savings of $4,600 per project and streamlining internal 
+                workflows.
+            </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-sm text-center text-gray-500 py-3 mt-auto ">
+    Built by Kazuki Neo &copy; 2025
+  </footer>
+</body>
+
 </html>
