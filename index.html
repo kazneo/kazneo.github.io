@@ -1,582 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kazuki Neo</title>
-
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./Assets/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./Assets/script.js" defer></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
-
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <!-- <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure> -->
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Kazuki Neo</h1>
-
-          <p class="title">Developer</p>
-          </br>
-          <p class="title">Product Manager</p>
-          </br>
-          <p class="title"> Innovation Strategist</p>
-        </div>
-
-        <!-- <div class="info-content"></div>
-          <h1 class="name" title="Richard hanrick"></h1>
-
-          <p class="title">Leader</p>
-        </div> -->
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:neok@rpi.edu" class="contact-link">neok@rpi.edu</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:kazneo213@gmail.com" class="contact-link">kazneo213@gmail.com</a>
-            </div>
-
-          </li>
-
-
-          
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Forest Hills, New York, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/kazuki-neo/" class="social-link">
-              <!-- <ion-icon name="logo-facebook"></ion-icon> -->
-              <img src="Assets/images/Logos/LinkedIn-Logos/In/Digital/White/2x/In-White-96@2x.png" alt="linkeIn" width="30">
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/kazneo" class="social-link">
-              <img src="Assets/images/Logos/github-mark/github-mark-white.svg" alt="github" width="30">
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link = "about">About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="resume">Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li> -->
-
-        </ul>
-
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kazuki Neo - Home</title>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+          body {
+              font-family: 'Inter', sans-serif;
+          }
+      </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col items-center">
+      <!-- Navbar -->
+      <nav class="w-full bg-white shadow-sm py-4 px-6 md:px-12 flex justify-between items-center rounded-b-lg">
+          <div class="text-lg font-bold text-gray-800">Kazuki Neo</div>
+          <div class="flex space-x-6">
+              <a href="about.html" class="text-gray-600 hover:text-gray-900 font-medium">About</a>
+              <a href="contact.html" class="text-gray-600 hover:text-gray-900 font-medium">Contact</a>
+          </div>
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I’m a graduate from Rensselaer Polytechnic Institute with a Master’s in Information Technology (Management Information Systems) and 
-            a Bachelor’s in IT & Web Science (Machine and Computational Learning). I specialize in turning emerging technologies—like machine learning, 
-            quantum computing, and AI—into practical solutions across industries including education, finance, infrastructure, and clean energy.
-            </br></br>
-            Throughout my academic and professional journey, I’ve built full-stack applications, engineered intelligent systems, and conducted impactful 
-            research including collaborations with NASA and presentations at IEEE conferences. I’ve also explored the frontier of quantum computing, 
-            developing classifiers and running Shor’s Algorithm to test encryption vulnerabilities.
-            </br></br>
-            One of my standout experiences was leading a student capstone project in partnership with Johnson & Johnson, where we developed a machine 
-            learning system that flagged project similarities—saving an estimated $4,600 per project annually and streamlining internal workflows.
-            </br></br>
-            If you're looking for someone who blends deep technical skills with strategic thinking—and who thrives at the edge of what's next—I'm open to new challenges, 
-            collaborations, and opportunities to build smarter systems for the future.
-          </p>
-
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i do</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./Assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Design</h4>
-
-                <p class="service-item-text">
-                  I create visually compelling and user-centric web designs that blend aesthetic appeal with functionality.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./Assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Development</h4>
-
-                <p class="service-item-text">
-                  I develop full-stack web applications from concept to deployment, leveraging my expertise in front-end and back-end technologies.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="Assets/images/icon-softdev.svg" alt="ai/ml dev icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI/ML development</h4>
-
-                <p class="service-item-text">
-                  I design and implement machine learning models and AI-driven solutions to solve complex problems and optimize business processes
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="Assets/images/icon-analysis.svg" alt="software dev icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">data analysis</h4>
-
-                <p class="service-item-text">
-                  I extract actionable insights from complex datasets using advanced statistical techniques.
-                </p>
-              </div>
-
-            </li>
-
-            <!-- <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="Assets/images/icon-fullstack.svg" alt="Innovation icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Innovation</h4>
-
-                <p class="service-item-text">
-                  
-                </p>
-              </div>
-
-            </li> -->
-            
-          </ul>
-
-        </section>
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Rensselaer Polytechnic Institute</h4>
-              <h5 style="color: white;">Master of Science in Information Technology</h5>
-            
-              <span>2024 — 2025</span>
-
-              <p class="timeline-text">
-                Building upon undergraduate foundation, emphasizing advanced IT management and system optimization.Through coursework and research, continuing to expand 
-                expertise in data-driven decision-making and strategic IT management, preparing for a career at the intersection of technology and business management.
+      <!-- Main Content Area -->
+      <main class="flex-grow w-full max-w-4xl bg-white p-8 md:p-12 mt-8 rounded-lg shadow-md">
+          <section class="mb-12">
+              <h1 class="text-4xl font-bold text-gray-900 mb-2">Hi, I'm Kazuki Neo</h1>
+              <p class="text-blue-700 font-medium mb-4 text-xl">Recent Graduate from Rensselaer Polytechnic Institute</p>
+              <p class="text-gray-700 mb-4 text-lg space-y-4">
+                  <p>
+                      I'm a recent graduate of Rensselaer Polytechnic Institute with a strong academic foundation in Data Analysis and Machine Learning, 
+                      passionate about applying data science to drive innovation, protect digital ecosystems, and enhance user experiences.
+                  </p>
+                  <p>
+                      Throughout my academic and professional journey, I've built full-stack applications, engineered intelligent systems, and conducted impactful research. 
+                      Every project I take on is an opportunity to learn, grow, and make an impact.
+                  </p>
+                  <p>
+                      One of my standout experiences was working with Johnson & Johnson as a part of capstone project, where we developed a machine learning system that flagged project similarities, saving an estimated $4,600 per project annually and streamlining internal workflows.
+                  </p>
+                  <p>
+                      If you're looking for someone who blends deep technical skills with strategic thinking and who thrives at the edge of what's next, I'm open to new challenges, collaborations, and opportunities to build smarter systems for the future.
+                  </p>
               </p>
+              <a href="about.html" class="inline-block mt-4 px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition duration-300 shadow-md">More Information →</a>
+          </section>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Rensselaer Polytechnic Institute</h4>
-              <h5 style="color: white;">Bachelor of Science in Information Technology and Web Science</h5>
-              <span>2021 — 2024</span>
-
-              <p class="timeline-text">
-                Developed a robust technical skill set, including proficiency in web development, machine learning development, and data analysis among other IT technologies, 
-                from algorithmic, engineering, and social perspectives. Key achievements include enhancing data usability and machine learning integration in atmospheric 
-                science research with NASA, scheduled for presentation at the Asia Oceania Geosciences Society in June 2024.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Profecinal Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AI Solutions Intern</h4>
-              <h5 style="color: white;">AlertBoss</h5>
-
-              <span>June 2023 - August 2023</span>
-
-              <p class="timeline-text">
-                Proposed an AI-driven solution to the executives to demonstrate its potential for significantly enhancing user experience. 
-                The solution leverages predictive analytics, personalization engines, automated testing, and intelligent customer support to 
-                create more intuitive and user-friendly interfaces. Additionally, it focuses on improving accessibility by integrating AI tools 
-                that support screen readers, and adaptive layouts, ensuring that all users, including individuals with disabilities, can 
-                effectively interact with the application. By doing so, it not only improves overall user satisfaction but also ensures that 
-                critical information, such as emergency alerts, is delivered in a timely and comprehensible manner.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Technology Intern</h4>
-              <h5 style="color: white;">ZoftBase</h5>
-              <span>November 2020 - August 2021</span>
-
-              <p class="timeline-text">
-                Developed drag-and-drop components and a backend for access control using React, Node.js, and MongoDB, hosted on AWS, to enhance 
-                user interface flexibility and security management. Additionally, contributed to brand marketing by creating technology-focused 
-                blog posts and managing social media, which effectively increased online engagement and audience reach.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web Design</h5>
-                <data value="75">75%</data>
+          <section class="mb-16 border-t pt-8 mt-8 border-gray-200">
+              <h2 class="text-3xl font-bold text-gray-900 mb-2">Academic Projects</h2>
+              <p class="text-lg text-gray-700 mb-6">Here are some of my recent academic projects.</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                      <h3 class="text-xl font-bold mb-2 text-gray-800">QML for Finance</h3>
+                      <p class="text-base text-gray-700">Developed and evaluated quantum machine learning algorithms for financial risk modeling, including Variational Quantum Classifier and Quantum Neural Network Classifier, achieving over 50% accuracy on reduced datasets and demonstrating their viability in data-constrained environments.</p>
+                  </div>
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                      <h3 class="text-xl font-bold mb-2 text-gray-800">Luma</h3>
+                      <p class="text-base text-gray-700">Built an LLM-powered document querying system allowing semantic search and retrieval of information.</p>
+                  </div>
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                      <h3 class="text-xl font-bold mb-2 text-gray-800">Round Table</h3>
+                      <p class="text-base text-gray-700">Created a strategic business framework to pioneer a platform aimed at enhancing event coordination efficiency for tabletop game communities while fostering collaboration and engagement.</p>
+                  </div>
+                  <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                      <h3 class="text-xl font-bold mb-2 text-gray-800">Intelligent Automation Insight</h3>
+                      <p class="text-base text-gray-700">In collaboration with Johnson & Johnson, developed a machine learning system that flags project similarities, saving an estimated $4,600 per project annually and streamlining internal workflows.</p>
+                  </div>
               </div>
+          </section>
+      </main>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web Development</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Analysis</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Visualization</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Machine Learning Development</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Project Planning</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Project Documentation</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Project Management</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="project-list"></ul>
-          
-          <div id="modal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <h3 id="modal-title"></h3>
-              <p id="modal-category"></p>
-              <p id="modal-type"></p>
-              <p id="modal-description"></p>
-            </div>
-          
-          </div>
-        
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-</body>
-
+      <!-- Footer -->
+      <footer class="w-full bg-white text-center py-4 mt-8 text-gray-600 text-sm rounded-t-lg">
+          &copy; 2025 / Kazuki Neo
+      </footer>
+  </body>
 </html>
